@@ -1,0 +1,335 @@
+body{
+    background-color: rgb(228, 231, 235);
+    width:100%vw;
+    margin:auto;
+    
+}
+ul{
+    display: inline;
+}
+li{
+    list-style-type: none;
+    display: flex;
+    height: 4rem;
+    width: 10rem;
+    margin: 10px;
+    text-decoration:none;
+    float: right;
+    flex-direction: row-reverse;
+}
+li > a{
+    background-color: rgb(18, 217, 243);
+    padding:.3rem;
+    border-radius: 15%;
+    color: rgb(0, 5, 8);
+    max-height: 1.5rem;
+    position: fixed;
+}
+/* .navBacking{
+    position: absolute;
+    display: inline; 
+    width: 0; 
+    height: 0; 
+    border-top: 30px solid transparent;
+    border-bottom: 30px solid transparent;
+    border-left: 30px solid rgb(90, 88, 92);
+    left:75rem;
+    z-index: -1;
+    
+}
+.navBacking2{
+    position: absolute;
+    display: inline; 
+    width: 0; 
+    height: 0; 
+    border-top: 30px solid transparent;
+    border-bottom: 30px solid transparent;
+    border-left: 30px solid rgb(138, 138, 139);
+    left:65rem;
+    z-index: -1;
+} 
+.navBacking3{
+    position: absolute;
+    display: inline; 
+    width: 0; 
+    height: 0; 
+    border-top: 30px solid transparent;
+    border-bottom: 30px solid transparent;
+    border-left: 30px solid rgb(112, 110, 114);
+    left:52rem;
+    z-index: -1;
+}
+.navBacking4{
+    position: absolute;
+    display: inline; 
+    width: 0; 
+    height: 0; 
+    border-top: 30px solid transparent;
+    border-bottom: 30px solid transparent;
+    border-left: 30px solid rgb(128, 127, 129);
+    left:42rem;
+    z-index: -1;
+}
+.navBacking5{
+    position: absolute;
+    display: inline; 
+    width: 0; 
+    height: 0; 
+    border-top: 30px solid transparent;
+    border-bottom: 30px solid transparent;
+    border-left: 30px solid rgb(110, 110, 110);
+    left:-30rem;
+    z-index: -1;
+} */
+.nav_home{
+    float: left;
+}
+/* .home_backing{
+    position:absolute;
+    height:3rem ;
+    width:3rem ;
+    border-radius: 50%;
+    background-color:rgb(109, 108, 110);
+    left:3.5rem;
+    top:3rem;
+    z-index: -1;
+}
+.home_backing2{
+    position: absolute;
+    height: 3rem;
+    width: 1rem;
+    background-color:rgb(109, 108, 110);
+    left:5.3rem;
+    z-index: -1;
+
+}
+.home_backing3{
+    position: absolute;
+    height: 1rem;
+    width: 2rem;
+    background-color:rgb(124, 124, 124);
+    left:5.5rem;
+    z-index: -1;
+} */
+.nav_border{
+    position: relative;
+    width: 90% vw;
+    height: 1% vw;
+    color: black;
+}
+.countdown{
+    position: absolute;
+    height: 7rem;
+    width: 7rem;
+    border-radius: 50%;
+    background-color: rgb(119, 118, 119);
+    border-style: solid;
+    border-color: black;
+    border-width: .1rem;
+    top:40rem;
+    left:72.5rem;
+    float: right;
+}
+.banner{
+    position: relative;
+    display: inline;
+    width:40%vw;
+    height: 10%vw;
+    background-color:rgb(247, 247, 141);
+    border: .1rem hidden black;
+    font-size: xx-large;
+}
+#homebanner{
+    display: flex;
+    top:0rem;
+    font-size:60px;
+    font-family: 'Monoton', cursive;
+    text-decoration: rgb(22, 6, 240);
+    width:50%;
+    left:20rem;
+    justify-content: center;    
+}
+.ticket_box{
+    position:sticky;
+    display: inline-block;
+    height: 7rem;
+    width: 7rem;
+    background-color:rgb(130, 128, 131) ;
+    border: 1px solid black;
+    top:80px;
+    left:40px;
+    justify-content: center;
+    align-items: center;
+    font-family: Orbitron;
+}
+.grid{
+    position: relative;
+    display: block;
+    left:15rem;
+    max-width: min-content;
+}
+img{
+    display: inline;
+    top:7rem;
+    height: 22rem;
+    width: 22rem;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    box-shadow: 10px 5px 5px rgb(50, 8, 240);
+}
+.grid-item{
+    position: relative;
+    display: inline;
+    height: 200px;
+    width: 23rem;
+    margin-top: 4rem;
+    margin-bottom: 4rem;
+    box-shadow: 10px 5px 5px rgb(50, 8, 240);
+}
+.description{
+    display: inline-block;
+    position: absolute;
+    height: 5rem;
+    width: 5rem;
+    background-color: rgb(15, 9, 1);
+    top:-140rem;
+    z-index: -1;
+}
+.grid-item-description{
+    position: absolute;
+    display: inline;
+    height: auto;
+    width: inherit;
+    z-index: -1;
+    top:-15rem;
+    max-width: 20%;
+    overflow-wrap: normal;
+    float: right;
+    
+}
+.pDesc{
+    overflow-wrap: normal;
+    
+}
+.grid-item-description > p{
+    max-width: inherit;
+}
+#footnote{
+    position: absolute;
+    font-size: x-small;
+    font-family: Orbitron;
+    float: right;
+    background: gray;
+    width: 90%;
+    
+}
+#footer_logo{
+    height: 50px;
+    width: 50px;
+    border: 2px solid black;
+    box-shadow:10px 5px 5px rgb(109, 4, 13);
+    float: right;
+    right:50px;
+}
+#daysUntilFirstFriday{
+    position:sticky;
+    display: inline;
+    height: 2rem;
+    width: 15rem;
+    background-color:rgb(188, 140, 243) ;
+    border: 1px solid black;
+    top:80px;
+    left:-40px;
+    justify-content:baseline;
+    align-items:baseline;
+    font-family: Orbitron;
+    float: right;
+    border-radius: 1rem;
+}
+.grid-container{
+    display: grid;
+    grid-template-rows: repeat(2, 1fr);
+    grid-template-columns: repeat(2, 1fr);
+    width: 95vw;
+    height: 100vh;
+    margin:auto;
+    
+    @media screen and (max-width: 60em) {
+        grid-template-rows: repeat(3, 1fr);
+      }
+}
+.callout{
+    margin-top: .2em;
+    margin-bottom: .2em;
+    box-shadow: 5px 0px 5px rgb(22, 27, 58);
+    overflow: hidden;
+}
+.grid-1, .grid-3, .grid-5{
+    margin-right: .2em;
+}
+.gridImage{
+    display: block;
+    height: 100%;
+    width:50%;
+    max-height: fit-content;
+    box-shadow: none;
+    float: right;
+    
+}
+.gridParas{
+    font-family: Orbitron, sans-serif;
+    justify-content: center;
+    text-align: center;
+    max-width:fit-content;
+    max-height: fit-content;
+    
+}
+
+/* I was going to use this css for the form, but used the next two blocks instead */
+/* .form_input{
+display: flex;
+justify-content: left;
+align-items: center;
+inset: 0;
+margin: 0;
+} */
+label {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    text-align: right;
+    width: 400px;
+    line-height: 26px;
+    margin-bottom: 10px;
+  }
+  
+  input {
+    height: 20px;
+    flex: 0 0 200px;
+    margin-left: 10px;
+  }
+form{
+    max-width: 30%;
+    margin:2%;
+}
+
+  .reg_header{
+      width: inherit;
+  }
+.reg_submit{
+    float: right;
+    margin-right:10%;
+}
+#warning{
+    position: absolute;
+    top: 5rem;
+    text-decoration: crimson;
+}
+#confirmMessage{
+    position: absolute;
+    top:10rem;
+    width:30%;
+    height: fit-content;
+    background-color: blue;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}

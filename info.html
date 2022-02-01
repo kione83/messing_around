@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Monoton&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Monoton&family=Orbitron&display=swap" rel="stylesheet">
+    <script defer src="scripts.js"></script>
+    <title>Document</title>
+</head>
+<body>
+<nav class="navbar">
+        <ul>
+            <li><a href="confirmation.html">Confirmation</a></li>
+            <li><a href="registration.html">Registration</a></li>
+            <li><a href="tickets.html">Tickets</a></li>
+            <li><a href="info.html">Information</a></li>
+            <li class="nav_home"><a href="index.html">Home</a></li>
+        </ul>
+</nav>
+
+<div id="homebanner" class="banner"></div>
+
+<div class="grid-container">
+    <div id="load-calendar" class="grid-1 callout primary">
+        <iframe src="https://calendar.google.com/calendar/embed?src=mn5roqalfhdle53n9c4elkj8qk%40group.calendar.google.com&ctz=America%2FChicago" style="border: 0" width="95%" height="95%" frameborder="0" scrolling="no"></iframe>
+    <script defer type="text/javascript">
+        var loadCalendar = document.getElementById("load-calendar");
+    </script>
+    </div>
+
+  <div id="grid-two" class="grid-2 callout warning">
+    <img src="https://c.files.bbci.co.uk/D505/production/_115033545_gettyimages-1226314512.jpg" id="gridTwoImg" class="gridImage" alt="corona virus image"><p id="gridTwoPara" class="gridParas"></p>
+  </div>
+
+  <div id="grid-three" class="grid-3 callout alert">
+    <img src="https://media.istockphoto.com/photos/concert-stage-picture-id542291490?k=20&m=542291490&s=170667a&w=0&h=wqWC72UQJDeuQ2zF1cAGMsM3W7tE4344dMKr7o_Afk4=" id="gridThreeImg" class="gridImage" alt="concert stage"><p id="gridThreePara" class="gridParas"></p>
+  </div>
+
+  <div id="grid-four" class="grid-4 callout success">
+    <img src="https://images.unsplash.com/photo-1453728013993-6d66e9c9123a?ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mnx8dmlld3xlbnwwfHwwfHw%3D&ixlib=rb-1.2.1&w=1000&q=80" id="gridFourImg" class="gridImage" alt="looking glass"><p id="gridFourPara" class="gridParas"></p>
+  </div>
+</div>
+
+
+<script>
+var gridThreePara = document.getElementById("gridThreePara");
+gridThreePara.innerHTML = "SNHU-PALOOZA brings live concerts to you, the students, every month in anticipation and appreciation of our new graduates. This is our way of saying thank you and congratulations. This event is a way of kicking off your next steps on the highest note possible (no pun intended).";
+
+var gridTwoPara = document.getElementById("gridTwoPara");
+gridTwoPara.innerHTML = "Current health and safety conditions require that we limit the number of concert-goers to 50,000 per event. These events are a great way to get out and experience some of the greatest musical artists of the day. Bring your friends and relax for a few hours, but be safe and be aware that certain health restrictions are in place for your safety and the safety of those around you."
+
+</script>
+</body>
+</html> 

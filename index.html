@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Monoton&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Monoton&family=Orbitron&display=swap" rel="stylesheet">
+    <script defer src="scripts.js"></script>
+    <title>Document</title>
+</head>
+
+<!--TODO get the text of the grid description items to be placed to the right of the photos instead o of underneath. So far my attempts to move them with CSS have been less than fruitful. The front page is coming along well enough, and the rest should be fairly easy. -->
+
+<body>
+    <!--create horizontal nav bar with 5 links -->
+    <nav class="navbar">
+        <ul>
+            <li><a href="confirmation.html">Confirmation</a></li>
+            <li><a href="registration.html">Registration</a></li>
+            <li><a href="tickets.html">Tickets</a></li>
+            <li><a href="info.html">Information</a></li>
+            <li class="nav_home"><a href="index.html">Home</a></li>
+        </ul>
+    </nav>
+    <!--add css color behind the nav links -->
+    <div class="navBacking"></div>
+    <div class="navBacking2"></div>
+    <div class="navBacking3"></div>
+    <div class="navBacking4"></div>
+    <div class="home_backing_container">
+    <div class="home_backing"></div>
+    <div class="home_backing2"></div>
+    <div class="home_backing3"></div>
+    </div>
+    <div class="nav_border"></div>
+    
+    
+    <div id="homebanner" class="banner"></div>
+    <!-- there will be a link around this div that takes you to the ticket purchase page-->
+    <div id="ticketCounter" class="ticket_box"></div>
+    <!--div to display number of days remaining until next event-->
+    <!-- there will be a link added around this div that takes you to the ticket purchase page-->
+    <div id="daysUntilFirstFriday" class="days_box"></div>
+
+    <!--create a grid of 4 images-->
+    <div class="grid">
+        <div class="grid_item">
+            <img src="https://s1.ticketm.net/dam/a/591/1efc08a9-b162-4e1d-8737-0c75569d2591_1418151_TABLET_LANDSCAPE_LARGE_16_9.jpg" alt="Eric Church">
+            <!--div for photo description-->
+            <div class="grid_item_description">
+                <h2>Eric Church</h2>
+                <p>Eric Church is a multi-instrumentalist, composer, and arranger. He is the founder of the Eric Church Music Group, which produces and arranges music for the church and community. He is also the author of the book, "The Music of Eric Church" (2014).</p>
+            </div>
+        </div>
+        <div class="grid_item">
+            <img src="https://www.gannett-cdn.com/presto/2021/10/10/PNAS/d703169d-4626-4d6f-a4c0-3c1a800e2015-RolingStones-100921-AN-046.jpg" alt="Rolling Stones">
+            <!--div for photo description-->
+            <div class="grid_item_description">
+                <h2>Rolling Stones</h2>
+                <p>Rolling Stones is an American rock band formed in London in 1962. The band consists of: Mick Jagger, Keith Richards, Brian Jones, Charlie Watts, and Bill Wyman. The band's musical style is derived from the blues rock genre, and incorporates elements of hard rock, psychedelic rock, and psychedelic pop.</p>
+            </div>
+        </div>
+        <div class="grid_item">
+            
+            <img src="https://variety.com/wp-content/uploads/2021/10/coldplay.jpg?w=1000" alt="Coldplay">
+            <!--div for photo description-->
+            <div class="grid_item_description">
+                <h2>Coldplay</h2>
+                <p>Coldplay is an English rock band formed in 1996 in Cambridge, England. The band consists of lead vocalist and keyboardist Chris Martin, lead guitarist Jonny Buckland, bassist and backing vocalist Guy Berryman, and drummer Will Champion. The band's music is characterized by a blend of alternative rock, pop rock, and progressive rock.</p>
+            </div>
+            
+
+        </div>
+        <div class="grid_item">
+            <img src="https://occ-0-1722-1723.1.nflxso.net/dnm/api/v6/E8vDc_W8CLv7-yMQu8KMEC7Rrr8/AAAABbCdfe3fhGODcmpiSmFoxiMsRoUhOiwhpjhF5fQkgntI80WcOnyoUbUuA4VRRDrong0zA6wBacX79AE0FqA3RNopBS37.jpg?r=a18" alt="Shawn Mendes">
+            <!--div for photo description-->
+            <div class="grid_item_description">
+                <h2>Shawn Mendes</h2>
+                <p>Shawn Mendes is an American singer, songwriter, and record producer. He is known for his work as a lead singer in the American rock band Panic! At Home, and for his work as a member of the band's first line-up, including the singles "I Don't Wanna Live Forever" and "I Don't Wanna Live Forever (Remix)".</p>
+            </div>
+
+        </div>
+    </div>
+    <br>
+    <br>
+    <br>
+    <br>
+
+
+    <img id="footer_logo" src="https://www.nisod.org/wp-content/uploads/2018/09/snhu_logo.png" alt="SNHU logo">
+    <footer id="footnote"></footer>
+
+   
+    
+            
+
+</body>
+</html>

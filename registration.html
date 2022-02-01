@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="styles.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Monoton&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Monoton&family=Orbitron&display=swap" rel="stylesheet">
+    <script defer src="scripts.js"></script>
+    <title>Document</title>
+</head>
+<body>
+<nav class="navbar">
+        <ul>
+            <li><a href="confirmation.html">Confirmation</a></li>
+            <li><a href="registration.html">Registration</a></li>
+            <li><a href="tickets.html">Tickets</a></li>
+            <li><a href="info.html">Information</a></li>
+            <li class="nav_home"><a href="index.html">Home</a></li>
+        </ul>
+    </nav>
+
+    <h1 class="reg_header">Please fill out the registration</h1>
+    <br>
+<!-- create a form that allows users to enter their information to register for tickets-->
+<form action="https://ptsv2.com/t/snhu_palooza/post" method="post" name="registrationForm" onsubmit="return validateForm()">
+    <p> First Name: <input type="text" name="firstName"/> </p>
+    <p> Last Name: <input type="text" name="lastName"/> </p>
+    <p> Phone Number: <input type="text" name="phoneNumber"/> </p>
+    <p> Email Address: <input type="text" name="emailAddr"/> </p>
+    <input type="submit" value="Submit" onsubmit="validateForm()"/>
+    
+</form>   
+
+<script defer>
+    function validateForm(){
+        var x = document.forms["registrationForm"]["firstName"].value;
+        var y = document.forms["registrationForm"]["lastName"].value;
+        if (x == "" || y == "" || x == null || y == null) {
+            alert("First and Last name must be filled out, please.");
+            return false;
+        }
+        if(document.registrationForm.phoneNumber.value.length != 10){
+            alert("Phone number must include area code, no spaces or dashes.");
+            return false;}
+        if (/^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/.test(registrationForm.emailAddr.value)){
+            return (true)}
+
+        alert("You have entered an invalid email address!")
+        return (false)}
+
+</script>
+
+    <div id="warning"></div>
+    <div id="information"></div> 
+    <a href="https://ptsv2.com/t/snhu_palooza">
+        Visit here to see the location of the posted information.
+    </a>   
+    
+<br>
+<br>
+
+<script> 
+    var warning = document.getElementById("warning");
+    var warningText = document.createTextNode("This is for demonstration only. Do NOT SUBMIT ACTUAL INFORMATION! The submit button will redirect you to a stand-in location where you can see what data was submitted. ");
+    warning.appendChild(warningText);
+    document.getElementById("warning").style.color = "red";
+    document.getElementById("warning").style.fontSize = "24px";
+    document.getElementById("warning").style.margintop = "10rem";
+    
+    </script>
+    <script>
+    var information = document.getElementById("information");
+    var informationText = document.createTextNode('When you reach the next page, move to the address bar and delete the /post. From there, you will be able to see exactly what was submitted and how it was sent. Alternatively you can just visit the page linked below.')
+    information.appendChild(informationText);
+    </script>
+    
+
+</body>
+</html> 

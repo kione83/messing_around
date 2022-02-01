@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div id="wages"></div>
+    <div id="taxes"></div>
+
+    <script> 
+
+    let  wages = (hours, rate) => {
+    return hours * rate;
+}
+let taxes = (wages, taxRate) => {
+     var withHolding = wages * (wages * taxRate);
+     var netWages = wages - withHolding;
+        return netWages, withHolding;
+}
+
+hours = parseInt(prompt("Enter your hours worked"));
+rate = parseFloat(prompt("Enter your hourly rate"));
+
+document.getElementById("wages").innerHTML = "Your gross wages are: " + wages(hours, rate);
+document.getElementById("taxes").innerHTML = "Your net wages are: " + netWages - withHolding;);
+
+
+    </script>
+</body>
+</html>
